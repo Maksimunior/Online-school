@@ -2,3 +2,49 @@
     padding: 0;
     margin: 0;
 }
+:root {
+    --main-font: 'Montserrat', sans-serif;
+}
+body {
+    font-family: var(--main-font);
+}
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.header_bloc{
+    display: flex;
+    margin-top: 30px;
+}
+h3{
+    margin-left: 16%;
+    margin-right: 7%;
+    font-size: 24px;
+    line-height: 32px;
+}
+.header_menu{
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+}
+.menu_name {
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header_button{
+    /* background-color: #c16161; */
+    margin-left: 20%;
+    padding-top: 5px;
+}
+.header_a{
+    margin-right: 70px;
+    color: #96BB7C;
+}
