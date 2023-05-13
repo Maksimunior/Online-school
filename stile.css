@@ -37,14 +37,11 @@ body {
 }
 .header__button {
     display: flex;
-    /* background-color: #c16161; */
     margin: 0 0 0 20%;
     padding: 5px 0 0 0;
 }
-.icon-header{
-    /* padding: 5px 0 0 0; */
-    width: 15px;
-    height: 15px;
+.icon-header__white{
+    display: none;
 }
 .header__link {
     margin: 0 20px 0 0;
@@ -62,6 +59,16 @@ body {
     padding: 15px 25px 15px 25px;
     background-color: #96BB7C;
     color: white;
+}
+.header__link:hover .icon-header__white {
+    display: inline;
+}
+.link-hover{
+    background-image: url(img/Vector_green.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 10px;
 }
 a{
     text-decoration: none;
