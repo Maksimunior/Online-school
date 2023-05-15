@@ -277,7 +277,7 @@ a{
     padding: 0 0 177px 0;
 }
 .pricing {
-    background: #FFF2F3;
+    background-color: #FFF2F3;
 }
 .pricing__main_content {
     display: flex;
@@ -486,5 +486,80 @@ a{
     Width: 9.14px;
     Height: 16px;
 }
-
+.contact {
+    background-color: #FFFFFF;
+}
+.contact__layout {
+    padding: 160px 0 164px 0;
+}
+.contact__main_content {
+    padding: 0 0 80px 0;
+    display: flex;
+    justify-content: space-between; 
+}
+.contact__main_position {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.contact__main_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+.contact__main_paragraph {
+    width: 469px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.contact__testimonials_card {
+    display: flex;
+}
+.contact__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 25px; */
+    width: 348px;
+    height: 317.01px;
+    background: #FFFFFF;
+}
+.contact__rating {
+padding: 57px 0 17px 0;
+}
+.img-rating{
+    Width: 18.34px;
+    Height: 18.35px;
+}
+.contact__paragraph {
+    width: 159px;
+    height: 120px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.contact__user {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 0 25px 0;
+    gap: 15px;
+}
+.contact__specialist {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
 
