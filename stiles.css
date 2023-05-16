@@ -84,7 +84,7 @@ header {
     display: inline;
 }
 .link-hover{
-    background-image: url(images/Vector_green.png);
+    background-image: url(img/Vector_green.png);
     background-position: right;
     background-repeat: no-repeat;
     width: 12px;
@@ -303,9 +303,10 @@ a{
     padding: 0 0 160px 0;
     gap: 10px
 }
-
+/* .pricing__cards {
+} */
 .pricing__cover1 {
-    background-image: url(images/product-cover_1.png);
+    background-image: url(img/product-cover1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -313,7 +314,7 @@ a{
     Height: 300px;
 }
 .pricing__cover2 {
-    background-image: url(images/product-cover2.png);
+    background-image: url(img/product-cover2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -321,7 +322,7 @@ a{
     Height: 300px;
 }
 .pricing__cover3 {
-    background-image: url(images/product-cover3.png);
+    background-image: url(img/product-cover3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
