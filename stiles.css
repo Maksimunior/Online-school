@@ -91,7 +91,7 @@ header {
     display: none;
 }
 .link{
-    padding: 15px 25px 15px 25px;
+    padding: 15px 40px 15px 40px;
 }
 .link:hover{
     padding: 15px 25px 15px 25px;
@@ -101,13 +101,6 @@ header {
 .link:hover .icon-header__white {
     padding: 0 0 0 10px;
     display: inline;
-}
-.link-hover{
-    background-image: url(images/Vector_green.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 10px;
 }
 .link-information{
     font-weight: 700;
@@ -157,6 +150,10 @@ a{
     margin: 0 10px 0 0;
 }
 .home__link:hover{
+    z-index: 1;
+    background-color: #96BB7C;
+}
+.home__link:hover .link{
     background-color: #96BB7C;
 }
 .home__rectangle{
@@ -190,7 +187,7 @@ a{
     padding: 15px 0 0 0;
 }
 .line{
-    width: 50px;
+    width: 193px;
     height: 2px;
     background: #E74040;
     margin: 20px 0 0 0;
@@ -241,8 +238,8 @@ a{
 }
 .product__learn_more {
     display: flex;
-    text-align: center;
     justify-content: center;
+    align-items: center;
 }
 .link-more{
     display: flex;
@@ -285,7 +282,7 @@ a{
     gap: 10px
 }
 .pricing__cover1 {
-    background-image: url(images/product-cover1.png);
+    background-image: url(images/pricing/product-cover1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -293,7 +290,7 @@ a{
     Height: 300px;
 }
 .pricing__cover2 {
-    background-image: url(images/product-cover2.png);
+    background-image: url(images/pricing/product-cover2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -301,7 +298,7 @@ a{
     Height: 300px;
 }
 .pricing__cover3 {
-    background-image: url(images/product-cover3.png);
+    background-image: url(images/pricing/product-cover3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -395,7 +392,10 @@ a{
     padding: 10px 0 0 25px;
     gap: 15px;
 }
-.pricing__vector {
+.vector-dowland {
+    padding: 3px 0 0 0;
+    width: 16px;
+    height: 16px;
 }
 .pricing__sales_text {
     font-weight: 700;
@@ -468,7 +468,6 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 25px; */
     width: 348px;
     height: 317.01px;
     background: #FFFFFF;
@@ -588,6 +587,7 @@ text-align: center;
     border-radius: 5px 0 0 5px;
 }
 .submit-email{
+    cursor: pointer;
     Width: 117px;
     Height: 58px;
     background: #96BB7C;
@@ -658,3 +658,17 @@ text-align: center;
     gap: 10px;
 }
 .wigth-contact{font-weight: 700;}
+.footer {
+    padding: 25px 0 25px 0;
+    background-color: #FAFAFA;;
+}
+.footer__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px 0 0;
+}
+.footer__block_icons {
+    display: flex;
+    gap: 22px;
+}
