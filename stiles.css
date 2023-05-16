@@ -18,6 +18,13 @@ h1{
     line-height: 80px;
     color: #252B42;
 }
+h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
 h3{
     font-weight: 700;
     font-size: 24px;
@@ -31,6 +38,21 @@ h4{
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #737373;
+}
+h5{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
     color: #737373;
 }
 header {
@@ -69,10 +91,7 @@ header {
     display: none;
 }
 .link{
-    font-weight: 700;
-    font-size: 14px;
     padding: 15px 25px 15px 25px;
-    color: #96BB7C;
 }
 .link:hover{
     padding: 15px 25px 15px 25px;
@@ -84,17 +103,23 @@ header {
     display: inline;
 }
 .link-hover{
-    background-image: url(img/Vector_green.png);
+    background-image: url(images/Vector_green.png);
     background-position: right;
     background-repeat: no-repeat;
     width: 12px;
     height: 10px;
 }
+.link-information{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #96BB7C;
+}
 a{
     text-decoration: none;
     color: black;
 }
-
 .home{
     background: #FAFAFA;
     padding: 10px 0 0 0;
@@ -108,6 +133,8 @@ a{
 .link-home{
     font-weight: 700;
     font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
     color: #96BB7C;
 }
 .home__headline{
@@ -171,11 +198,6 @@ a{
 .home__paragraph {
     width: 222px;
     height: 60px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #737373;
 }
 .product { 
     box-flex-group: #fff;
@@ -193,20 +215,7 @@ a{
     Height: 104px;
 }
 .product__metrics {
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 80px;
-    text-align: center;
-    letter-spacing: 0.2px;
     color: #96BB7C;
-}
-.product__metrics_title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: #252B42;
 }
 .product__customer_orientation {
     display: flex;
@@ -226,30 +235,14 @@ a{
     height: 7px;
     background: #E74040;
 }
-.product__title_client {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.2px;
-    color: #252B42;
-}
 .product__paragraph {
     width: 351px;
     height: 60px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #737373;
 }
 .product__learn_more {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
 }
 .link-more{
     display: flex;
@@ -260,7 +253,7 @@ a{
 }
 .img-arrow{
     display: flex;
-    padding: 4px 0 0 10px;
+    padding: 0 0 0 10px;
     Width: 8px;
     Height: 16px;
 }
@@ -281,21 +274,9 @@ a{
     align-items: flex-start;
     gap: 10px;
 }
-.pricing__main_title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.2px;
-    color: #252B42;
-}
 .pricing__main_paragraph {
     width: 469px;
     height: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #737373;
 }
 .pricing__product {
     display: flex;
@@ -303,10 +284,8 @@ a{
     padding: 0 0 160px 0;
     gap: 10px
 }
-/* .pricing__cards {
-} */
 .pricing__cover1 {
-    background-image: url(img/product-cover1.png);
+    background-image: url(images/product-cover1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -314,7 +293,7 @@ a{
     Height: 300px;
 }
 .pricing__cover2 {
-    background-image: url(img/product-cover2.png);
+    background-image: url(images/product-cover2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -322,7 +301,7 @@ a{
     Height: 300px;
 }
 .pricing__cover3 {
-    background-image: url(img/product-cover3.png);
+    background-image: url(images/product-cover3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -388,14 +367,8 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-.pricing__link_category {
-    margin: 0 0 0 25px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-}
 .link-category {
+    margin: 0 0 0 25px;
     color: #96BB7C;
 }
 .pricing__emojione {
@@ -411,21 +384,11 @@ a{
 }
 .pricing__product_title {
     padding: 11px 0 0 25px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: #252B42;
 }
 .pricing__product_description {
     width: 260px;
     height: 60px;
     padding: 10px 0 0 25px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #737373;
 }
 .pricing__sales {
     display: flex;
@@ -494,21 +457,9 @@ a{
     align-items: flex-start;
     gap: 10px;
 }
-.contact__main_title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.2px;
-    color: #252B42;
-}
 .contact__main_paragraph {
     width: 469px;
     height: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #737373;
 }
 .contact__testimonials_card {
     display: flex;
@@ -532,12 +483,7 @@ padding: 57px 0 17px 0;
 .contact__paragraph {
     width: 159px;
     height: 120px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
     text-align: center;
-    letter-spacing: 0.2px;
-    color: #737373;
 }
 .contact__user {
     display: flex;
@@ -545,6 +491,13 @@ padding: 57px 0 17px 0;
     align-items: center;
     padding: 0 0 25px 0;
     gap: 15px;
+}
+.contact__specialist{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #252B42;
 }
 .contact__layout2{
     padding: 113px 0 134px 0;
@@ -563,11 +516,6 @@ padding: 57px 0 17px 0;
 .contact__main_paragraph2 {
     width: 469px;
     height: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #737373;
 }
 .contact__bloc_user_card {
     display: flex;
@@ -586,25 +534,12 @@ padding: 57px 0 17px 0;
 .img-user{
     border-radius: 20px 20px 0 0;
 }
-.conflict__user_cover {
-
-}
 .conflict__user_title {
     padding: 30px 0 10px 0;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: #252B42;
 }
 .contact__user_paragraph {
-    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #737373;
 }
 .conflict__bloc_icon {
     display: flex;
@@ -635,16 +570,8 @@ text-align: center;
 .paragraph-loyout3{
     width: 469px;
     height: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #737373;
-
 }
 .contact__button_subscribe {
-    display: flex;
     display: flex;
     flex-direction: row;
     justify-content: center;
