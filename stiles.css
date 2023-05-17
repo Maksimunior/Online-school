@@ -4,6 +4,18 @@
 }
 :root {
     --main-font: 'Montserrat', sans-serif;
+    --title-color: #252B42;
+    --paragraph-color: #737373; 
+    --background1-color: #FAFAFA;
+    --background2-color: #fff;
+    --background3-color: #FFF2F3;
+    --link-color: #96BB7C;
+    --background-button-color: #E74040;
+    --card-color: rgba(0, 0, 0, 0.07);
+    --price1-color: #BDBDBD;
+    --price2-color: #FFAB71;
+    --background-email-color: #F9F9F9;
+    --border-color: #E6E6E6;
 }
 body {
     font-family: var(--main-font);
@@ -16,21 +28,21 @@ h1{
     font-weight: 700;
     font-size: 58px;
     line-height: 80px;
-    color: #252B42;
+    color: var(--title-color);
 }
 h2{
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 0.2px;
-    color: #252B42;
+    color: var(--title-color);
 }
 h3{
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.1px;
-    color: #252B42;
+    color: var(--title-color);
 }
 h4{
     width: 496px;
@@ -39,24 +51,24 @@ h4{
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.1px;
-    color: #737373;
+    color: var(--paragraph-color);
 }
 h5{
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
-    color: #252B42;
+    color: var(--title-color);
 }
 p{
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--paragraph-color);
 }
 header {
-    background: #FAFAFA;
+    background: var(--background1-color);
     position: sticky;
     top: 0;
     width: 100%;
@@ -79,7 +91,7 @@ header {
     list-style-type: none;
 }
 .menu-header__name {
-    color: #737373;
+    color: var(--paragraph-color);
     margin: 0 10px 0 0;
 }
 .header__button {
@@ -95,8 +107,8 @@ header {
 }
 .link:hover{
     padding: 15px 25px 15px 25px;
-    background-color: #96BB7C;
-    color: white;
+    background-color: var(--link-color);
+    color: var(--background2-color);
 }
 .link:hover .icon-header__white {
     padding: 0 0 0 10px;
@@ -107,14 +119,13 @@ header {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
-    color: #96BB7C;
+    color: var(--link-color);
 }
 a{
     text-decoration: none;
-    color: black;
 }
 .home{
-    background: #FAFAFA;
+    background: var(--background1-color);
     padding: 10px 0 0 0;
 }
 .home__block1{
@@ -128,7 +139,7 @@ a{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
-    color: #96BB7C;
+    color: var(--link-color);
 }
 .home__headline{
     margin: 35px 0 35px 0;
@@ -145,22 +156,22 @@ a{
     align-items: center;
     width: 193px;
     height: 52px;
-    border: 1px solid #96BB7C;
+    border: 1px solid var(--link-color);
     border-radius: 5px;
     margin: 0 10px 0 0;
 }
 .home__link:hover{
     z-index: 1;
-    background-color: #96BB7C;
+    background-color: var(--link-color);
 }
 .home__link:hover .link{
-    background-color: #96BB7C;
+    background-color: var(--link-color);
 }
 .home__rectangle{
     width: 520px;
     height: 626.4px;
     bottom: 0px;
-    background: #FFF2F3;
+    background: var(--background1-color);
     border-radius: 50px;
 }
 .placeholder{
@@ -179,17 +190,17 @@ a{
     gap: 20px;
     width: 328px;
     height: 296px;
-    background: #FFFFFF;
+    background: var(--background2-color);
     margin: 0 30px 0 0;
-    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 13px 19px var(--card-color);
 }
 .home__circle_img {
     padding: 15px 0 0 0;
 }
 .line{
-    width: 193px;
+    width: 50px;
     height: 2px;
-    background: #E74040;
+    background: var(--background-button-color);
     margin: 20px 0 0 0;
 }
 .home__paragraph {
@@ -197,7 +208,7 @@ a{
     height: 60px;
 }
 .product { 
-    box-flex-group: #fff;
+    box-flex-group: var(--background2-color);
 }
 .product__stats {
     display: flex;
@@ -212,7 +223,7 @@ a{
     Height: 104px;
 }
 .product__metrics {
-    color: #96BB7C;
+    color: var(--link-color);
 }
 .product__customer_orientation {
     display: flex;
@@ -230,7 +241,7 @@ a{
     margin: 0 0 35px 0;
     width: 94px;
     height: 7px;
-    background: #E74040;
+    background: var(--background-button-color);
 }
 .product__paragraph {
     width: 351px;
@@ -246,7 +257,7 @@ a{
     padding-right: 10px;
     font-weight: 700;
     font-size: 14px;
-    color: #96BB7C;
+    color: var(--link-color);
 }
 .img-arrow{
     display: flex;
@@ -258,7 +269,7 @@ a{
     padding: 0 0 177px 0;
 }
 .pricing {
-    background-color: #FFF2F3;
+    background-color: var(--background3-color);
 }
 .pricing__main_content {
     display: flex;
@@ -314,10 +325,10 @@ a{
 }
 .button-sale {
     padding: 5px 10px 5px 10px;
-    background: #E74040;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: var(--background-button-color);
+    box-shadow: 0px 2px 4px var(--card-color);
     border-radius: 3px;
-    color: white;
+    color: var(--background2-color);
 }
 .pricing__product_actions {
     display: flex;
@@ -331,7 +342,7 @@ a{
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--background2-color);
     border-radius: 44.7857px;   
 }
 .pricing__basket {
@@ -340,7 +351,7 @@ a{
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--background2-color);
     border-radius: 44.7857px; 
 }
 .pricing__reviewed {
@@ -349,14 +360,14 @@ a{
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--background2-color);
     border-radius: 44.7857px; 
 }
 .pricing__frame {
     Width: 348px;
     Height: 300px;
     padding: 26px 0 0 0;
-    background-color: #fff;
+    background-color: var(--background2-color);
 }
 .pricing__product_category {
     display: flex;
@@ -366,13 +377,13 @@ a{
 }
 .link-category {
     margin: 0 0 0 25px;
-    color: #96BB7C;
+    color: var(--link-color);
 }
 .pricing__emojione {
     margin: 0 25px 0 0;
     display: flex;
-    background: #2D4059;
-    color: #fff;
+    color: var(--title-color);
+    color: var(--background2-color);
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -402,7 +413,7 @@ a{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--paragraph-color);
 }
 .pricing__price {
     display: flex;
@@ -415,7 +426,7 @@ a{
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.1px;
-    color: #BDBDBD;
+    color: var(--price1-color);
 }
 .pricing__price_text2 {
     font-weight: 700;
@@ -423,7 +434,7 @@ a{
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.1px;
-    color: #FFAB71;
+    color: var(--price2-color);
 }
 .pricing__button_information {
     display: flex;
@@ -432,7 +443,7 @@ a{
     align-items: center;
     width: 141.14px;
     height: 44px;
-    border: 1px solid #96BB7C;
+    border: 1px solid var(--link-color);
     border-radius: 37px;
 }
 .img-arrows {
@@ -441,7 +452,7 @@ a{
     Height: 16px;
 }
 .contact {
-    background-color: #FFFFFF;
+    background-color: var(--background2-color);
 }
 .contact__layout1 {
     padding: 160px 0 164px 0;
@@ -470,7 +481,7 @@ a{
     align-items: center;
     width: 348px;
     height: 317.01px;
-    background: #FFFFFF;
+    background: var(--background2-color);
 }
 .contact__rating {
 padding: 57px 0 17px 0;
@@ -496,7 +507,7 @@ padding: 57px 0 17px 0;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.2px;
-    color: #252B42;
+    color: var(--title-color);
 }
 .contact__layout2{
     padding: 113px 0 134px 0;
@@ -526,8 +537,8 @@ padding: 57px 0 17px 0;
     align-items: center;
     width: 240px;
     height: 375px;
-    background: #FFFFFF;
-    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    background: var(--background2-color);
+    box-shadow: 0px 13px 19px var(--card-color);
     border-radius: 20px;
 }
 .img-user{
@@ -582,19 +593,19 @@ text-align: center;
     Width: 571px;
     Height: 58px;
     box-sizing: border-box;
-    background: #F9F9F9;
-    border: 1px solid #E6E6E6;
+    background: var(--background-email-color);
+    border: 1px solid var(--border-color);
     border-radius: 5px 0 0 5px;
 }
 .submit-email{
     cursor: pointer;
     Width: 117px;
     Height: 58px;
-    background: #96BB7C;
-    border: 1px solid #E6E6E6;
+    background: var(--link-color);
+    border: 1px solid var(--border-color);
     border-radius: 0px 5px 5px 0px;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--background2-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
@@ -638,7 +649,7 @@ text-align: center;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--paragraph-color);
     gap: 10px;
 }
 .mailto{
@@ -648,7 +659,7 @@ text-align: center;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--paragraph-color);
     gap: 10px;
 }
 .adress{
@@ -660,7 +671,7 @@ text-align: center;
 .wigth-contact{font-weight: 700;}
 .footer {
     padding: 25px 0 25px 0;
-    background-color: #FAFAFA;;
+    background-color: var(--background1-color);
 }
 .footer__block{
     display: flex;
