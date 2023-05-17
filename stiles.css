@@ -78,10 +78,8 @@ header {
 .header__block {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0 5px 0;
-}
-.header__title_shool{
-    justify-content: start;
+    align-items: center;
+    padding: 30px 0 0 0;
 }
 .header__menu {
     display: flex;
@@ -100,11 +98,11 @@ header {
 }
 .header__button {
     display: flex;
-    margin: 0 150px 0 0;
+    margin: 0 150px 0 160px;
     gap: 20px;
 }
 .link{
-    padding: 15px 25px 15px 40px;
+    padding: 15px 25px 15px 21px;
     cursor: pointer;
     background-color: var(--background1-color);
     border: 0;
