@@ -11,6 +11,7 @@
     --background3-color: #FFF2F3;
     --link-color: #96BB7C;
     --background-button-color: #E74040;
+    --card-shadow-color: rgba(0, 0, 0, 0.07);
     --card-color: #2D4059;
     --price1-color: #BDBDBD;
     --price2-color: #FFAB71;
@@ -191,7 +192,7 @@ a{
     height: 296px;
     background: var(--background2-color);
     margin: 0 30px 0 0;
-    box-shadow: 0px 13px 19px var(--card-color);
+    box-shadow: 0px 13px 19px var(--card-shadow-color);
 }
 .home__circle_img {
     padding: 15px 0 0 0;
@@ -539,7 +540,7 @@ padding: 57px 0 17px 0;
     width: 240px;
     height: 375px;
     background: var(--background2-color);
-    box-shadow: 0px 13px 19px var(--card-color);
+    box-shadow: 0px 13px 19px var(--card-shadow-color);
     border-radius: 20px;
 }
 .img-user{
