@@ -11,7 +11,7 @@
     --background3-color: #FFF2F3;
     --link-color: #96BB7C;
     --background-button-color: #E74040;
-    --card-color: rgba(0, 0, 0, 0.07);
+    --card-color: #2D4059;
     --price1-color: #BDBDBD;
     --price2-color: #FFAB71;
     --background-email-color: #F9F9F9;
@@ -106,7 +106,6 @@ header {
     padding: 15px 40px 15px 40px;
 }
 .link:hover{
-    padding: 15px 25px 15px 25px;
     background-color: var(--link-color);
     color: var(--background2-color);
 }
@@ -381,9 +380,11 @@ a{
 }
 .pricing__emojione {
     margin: 0 25px 0 0;
-    display: flex;
-    color: var(--title-color);
+    padding: 0 5px 0 5px;
+    background: var(--title-color);
     color: var(--background2-color);
+    display: flex;
+    gap: 5px;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
