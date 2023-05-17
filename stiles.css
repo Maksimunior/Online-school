@@ -77,12 +77,15 @@ header {
 }
 .header__block {
     display: flex;
+    justify-content: space-between;
     padding: 30px 0 5px 0;
 }
-.header__title {
-    padding: 0 78px 0 0;
+.header__title_shool{
+    justify-content: start;
 }
 .header__menu {
+    display: flex;
+    justify-content: start;
     font-size: 14px;
     line-height: 24px;
     padding: 5px 0 0 0;
@@ -90,29 +93,31 @@ header {
 .menu-header {
     display: flex;
     list-style-type: none;
+    gap: 10px;
 }
 .menu-header__name {
     color: var(--paragraph-color);
-    margin: 0 10px 0 0;
 }
 .header__button {
     display: flex;
-    margin: -8px 0 0 20%;
+    margin: 0 150px 0 0;
     gap: 20px;
 }
-.icon-header__white{
-    display: none;
-}
 .link{
-    padding: 15px 40px 15px 40px;
+    padding: 15px 25px 15px 40px;
+    cursor: pointer;
+    background-color: var(--background1-color);
+    border: 0;
 }
 .link:hover{
     background-color: var(--link-color);
     color: var(--background2-color);
 }
-.link:hover .icon-header__white {
-    padding: 0 0 0 10px;
-    display: inline;
+.link img {
+    padding: 0 0 0 15px;
+}
+.link:hover img {
+    padding: 0 0 0 15px;
 }
 .link-information{
     font-weight: 700;
@@ -144,34 +149,31 @@ a{
 .home__headline{
     margin: 35px 0 35px 0;
     width: 542px;
-    height: 160px;
 }
 .home__button{
     display: flex;
     margin: 35px 0 0 0;
+    gap: 10px;
 }
 .home__link{
+    padding: 15px 40px 15px 40px;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
-    width: 193px;
-    height: 52px;
+    background-color: var(--background2-color);
     border: 1px solid var(--link-color);
     border-radius: 5px;
-    margin: 0 10px 0 0;
 }
-.home__link:hover{
-    z-index: 1;
-    background-color: var(--link-color);
-}
-.home__link:hover .link{
+.home__link:hover, .link:hover{
+    color: var(--background2-color);
     background-color: var(--link-color);
 }
 .home__rectangle{
     width: 520px;
     height: 626.4px;
     bottom: 0px;
-    background: var(--background1-color);
+    background: var(--background3-color);
     border-radius: 50px;
 }
 .placeholder{
@@ -205,7 +207,6 @@ a{
 }
 .home__paragraph {
     width: 222px;
-    height: 60px;
 }
 .product { 
     box-flex-group: var(--background2-color);
@@ -213,7 +214,6 @@ a{
 .product__stats {
     display: flex;
     justify-content: center;
-
     margin: 80px 0 80px 0;
     Gap: 10px;
 }
@@ -223,7 +223,11 @@ a{
     Height: 104px;
 }
 .product__metrics {
+    counter-increment: digit-counter;
     color: var(--link-color);
+}
+.product__metrics::before {
+    content: attr(data-digit);
 }
 .product__customer_orientation {
     display: flex;
@@ -245,12 +249,13 @@ a{
 }
 .product__paragraph {
     width: 351px;
-    height: 60px;
 }
 .product__learn_more {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--background2-color);
+    border: 0;
 }
 .link-more{
     display: flex;
@@ -284,7 +289,6 @@ a{
 }
 .pricing__main_paragraph {
     width: 469px;
-    height: 40px;
 }
 .pricing__product {
     display: flex;
@@ -338,6 +342,7 @@ a{
 }
 .pricing__like {
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -347,6 +352,7 @@ a{
 }
 .pricing__basket {
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -356,6 +362,7 @@ a{
 }
 .pricing__reviewed {
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -371,7 +378,6 @@ a{
 }
 .pricing__product_category {
     display: flex;
-    height: 26px;
     justify-content: space-between;
     align-items: center;
 }
@@ -397,7 +403,6 @@ a{
 }
 .pricing__product_description {
     width: 260px;
-    height: 60px;
     padding: 10px 0 0 25px;
 }
 .pricing__sales {
@@ -440,11 +445,13 @@ a{
 }
 .pricing__button_information {
     display: flex;
+    cursor: pointer;
     margin: 15px 0 0 25px;
     justify-content: center;
     align-items: center;
     width: 141.14px;
     height: 44px;
+    background-color: var(--background2-color);
     border: 1px solid var(--link-color);
     border-radius: 37px;
 }
@@ -472,7 +479,6 @@ a{
 }
 .contact__main_paragraph {
     width: 469px;
-    height: 40px;
 }
 .contact__testimonials_card {
     display: flex;
@@ -482,11 +488,10 @@ a{
     flex-direction: column;
     align-items: center;
     width: 348px;
-    height: 317.01px;
     background: var(--background2-color);
 }
 .contact__rating {
-padding: 57px 0 17px 0;
+    padding: 57px 0 17px 0;
 }
 .img-rating{
     Width: 18.34px;
@@ -494,14 +499,13 @@ padding: 57px 0 17px 0;
 }
 .contact__paragraph {
     width: 159px;
-    height: 120px;
     text-align: center;
 }
 .contact__user {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 0 0 25px 0;
+    padding: 30px 0 25px 0;
     gap: 15px;
 }
 .contact__specialist{
@@ -525,10 +529,10 @@ padding: 57px 0 17px 0;
     align-items: flex-start;
     gap: 10px;
 }
-.contact__main_paragraph2 {
+/* .contact__main_paragraph2 {
     width: 469px;
     height: 40px;
-}
+} */
 .contact__bloc_user_card {
     display: flex;
     gap: 30px;
@@ -563,9 +567,6 @@ padding: 57px 0 17px 0;
     text-align: center;
 }
 .contact__main_content3 {
-text-align: center;
-}
-.contact__main_position3 {
     text-align: center;
 }
 .contact__main_link3 {
@@ -574,14 +575,6 @@ text-align: center;
 }
 .contact__main_title3 {
     padding: 10px 0 10px 0;
-}
-.contact__main_paragraph3 {
-    display: flex;
-    justify-content: center;
-}
-.paragraph-loyout3{
-    width: 469px;
-    height: 40px;
 }
 .contact__button_subscribe {
     display: flex;
@@ -612,7 +605,6 @@ text-align: center;
     font-size: 14px;
     line-height: 28px;
 }
-
 .contact__layout4 {
     display: flex;
     padding: 50px 0 52px 0;
@@ -624,7 +616,6 @@ text-align: center;
     align-items: flex-start;
     gap: 20px;
     width: 148px;
-    height: 170px;
 }
 .contact__data{
     display: flex;
@@ -632,7 +623,6 @@ text-align: center;
     align-items: flex-start;
     gap: 20px;
     width: 321px;
-    height: 162px;
 }
 .contact__block_info {
     display: flex;
@@ -668,6 +658,10 @@ text-align: center;
     display: flex;
     align-items: center;
     font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--paragraph-color);
     gap: 10px;
 }
 .wigth-contact{font-weight: 700;}
