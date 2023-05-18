@@ -79,14 +79,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0 0 0;
+    padding-top: 30px;
 }
 .header__menu {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     font-size: 14px;
     line-height: 24px;
-    padding: 5px 0 0 0;
 }
 .menu-header {
     display: flex;
@@ -98,7 +97,9 @@ header {
 }
 .header__button {
     display: flex;
-    margin: 0 150px 0 160px;
+    justify-content: flex-start;
+    padding-right: 150px;
+    padding-left: 160px;
     gap: 20px;
 }
 .link{
